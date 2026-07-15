@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f6f8fa]">
+
+<header class="bg-[#D32323] px-[60px] py-3 flex justify-between items-center">
+  <!-- Logo Section -->
+  <a href="index.html" class="flex flex-col items-center gap-1 text-white no-underline">
+    <img src="./icons/co homes icon.png" alt="coHomes Logo" class="w-9 h-9 object-contain">
+    <span class="text-sm font-bold tracking-tight leading-none">coHomes</span>
+  </a>
+
+  <!-- Center Navigation Items -->
+  <nav class="flex gap-6">
+    <a href="index.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Home</a>
+    <a href="properties.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Properties</a>
+    <a href="findroomate.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Find Roommate</a>
+    <a href="emememme.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Explore</a>
+    <a href="blog.html" class="text-white text-sm font-medium no-underline transition-colors">Blog</a>
+  </nav>
+
+  <!-- Right Side Actions -->
+  <div class="flex gap-3 items-center">
+    <a href="login.html" class="text-white text-sm font-medium no-underline border border-white/60 px-5 py-1.5 rounded transition-colors hover:bg-white/10">Login</a>
+    <a href="register.html" class="bg-[#821010] hover:bg-[#690d0d] text-white text-sm font-medium no-underline px-5 py-[7px] rounded transition-colors">Register</a>
+  </div>
+</header>
+
+<nav class="flex items-center gap-[35px] border border-gray-200 bg-white px-6 py-4">
+  <a href="account.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Account</a>
+  <a href="mylisting.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">My Listings</a>
+  <a href="savedproperty.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Saved Properties</a>
+  <a href="addproperty.html" class="text-[#c41e1e] font-semibold text-sm no-underline pb-1 border-b-2 border-[#c41e1e]">Add Property</a>
+  <a href="accountsettings.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Account Settings</a>
+</nav>
+
+
+
+<!-- content -->
+
+
+<!-- Account Sub-Nav -->
+
+<main class=" px-6 py-6 max-w-[1150px] mx-auto">
+
+  <!-- Breadcrumb -->
+  <div class="text-sm text-gray-500 mb-4 ">
+    Listings <span class="mx-1">&gt;</span>
+    <span class="text-[#c41e1e] font-semibold">Add property</span>
+  </div>
+
+  <!-- Form Card -->
+  <div class="bg-white border border-gray-200">
+
+    <!-- Card Header -->
+    <div class="px-6 py-4 border-[1px] border-gray-200 bg-[#f6f8fa]">
+      <h2 class="font-bold text-gray-900">Add property</h2>
+    </div>
+
+    <!-- Card Body -->
+    <div class="p-6">
+
+      <!-- Row: Title / Market Position -->
+      <div class="grid grid-cols-2 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Title</label>
+          <input type="text" placeholder="E.g 3 bedroom Terraced duplex" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Market Position</label>
+          <input type="text" placeholder="Available" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row: Category / Property type / Price -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Category</label>
+          <input type="text" placeholder="Rent" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Property type</label>
+          <input type="text" placeholder="Flat" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Price</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row: Bedroom / Bathroom / Toilet -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Bedroom</label>
+          <input type="text" placeholder="3" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Bathroom</label>
+          <input type="text" placeholder="2" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Toilet</label>
+          <input type="text" placeholder="3" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row: Parking space / State / City -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Parking space</label>
+          <input type="text" placeholder="3" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">State</label>
+          <input type="text" placeholder="Abuja" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">City</label>
+          <input type="text" placeholder="FCT" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Street/Estate -->
+      <div class="mb-5">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Street/Estate</label>
+        <input type="text" placeholder="E.g No 2 Dosunmo close iya Abubakar Crescent Jabi" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+      </div>
+
+      <!-- Video Link -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Video Link</label>
+        <input type="text" placeholder="Add video link" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+      </div>
+
+      <!-- Upload Pictures -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Upload pictures <span class="text-[#c41e1e]">*</span></label>
+        <label class="w-[165px] h-[165px] border border-gray-300 rounded flex items-center justify-center cursor-pointer hover:bg-gray-50">
+          <span class="text-[80px] text-gray-400 font-light">+</span>
+          <input type="file" class="hidden" multiple accept="image/*">
+        </label>
+      </div>
+
+      <!-- Description -->
+      <div class="mb-8">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Description</label>
+        <textarea class="w-full h-[210px] border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 outline-none focus:border-[#c41e1e] resize-none"></textarea>
+      </div>
+
+      <!-- Add Property Button -->
+      <div class="flex justify-center">
+        <button type="submit" class="bg-[#d32323] hover:bg-[#a21515] text-white text-sm font-bold px-8 py-3 rounded transition-colors">
+          Add property
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- footer -->
+   <footer class="bg-[#34404c] text-white font-sans pt-[60px]">
+  <div class="max-w-[1200px] mx-auto px-5 flex justify-between items-start flex-wrap gap-10">
+    <!-- Brand Section -->
+    <div class="flex flex-col gap-6">
+      <div class="flex items-center gap-3">
+        <img src="./icons/co homes icon.png" alt="CoHomes Logo" class="h-10 w-auto">
+        <span class="text-[28px] font-bold tracking-wide">CoHomes</span>
+      </div>
+      <div class="flex items-center gap-2.5 text-slate-300 text-lg">
+        <img src="./icons/twitter.png" alt="Twitter" class="w-6 h-auto">
+        <span>@Thecohomes</span>
+      </div>
+    </div>
+
+    <!-- Links Columns -->
+    <div class="flex gap-[60px] flex-wrap">
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">FAQs</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">About Us</a></li>
+          <li><a href="properties.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Properties</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Privacy Policy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Home</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Buy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Sell</a></li>
+          <li><a href="findroomate.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Roommate</a></li>
+          <li><a href="blog.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Top Cities</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Abuja</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Lagos</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Enugu</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Contact Us</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li class="flex items-center gap-3">
+            <img src="./icons/email.png" alt="Email" class="w-[18px] h-auto opacity-90">
+            <a href="mailto:cohomes@gmail.com" class="text-slate-300 hover:text-white no-underline text-base transition-colors">cohomes@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/phone.png" alt="Phone" class="w-[18px] h-auto opacity-90">
+            <a href="tel:+2347056306413" class="text-slate-300 hover:text-white no-underline text-base transition-colors">+2347056306413</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/twitter.png" alt="Twitter" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">@Thecohomes</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/facebook.png" alt="Facebook" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Thecohomes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-[#222b34] mt-[60px] py-5">
+    <div class="max-w-[1200px] mx-auto px-5">
+      <p class="m-0 text-sm text-slate-400"><span class="text-[17px]">&copy;</span> 2020 CoHomes.com</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+

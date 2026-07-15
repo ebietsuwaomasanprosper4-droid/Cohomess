@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f6f8fa]">
+
+<header class="bg-[#D32323] px-[60px] py-3 flex justify-between items-center">
+  <!-- Logo Section -->
+  <a href="index.html" class="flex flex-col items-center gap-1 text-white no-underline">
+    <img src="./icons/co homes icon.png" alt="coHomes Logo" class="w-9 h-9 object-contain">
+    <span class="text-sm font-bold tracking-tight leading-none">coHomes</span>
+  </a>
+
+  <!-- Center Navigation Items -->
+  <nav class="flex gap-6">
+    <a href="index.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Home</a>
+    <a href="properties.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Properties</a>
+    <a href="findroomate.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Find Roommate</a>
+    <a href="emememme.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Explore</a>
+    <a href="blog.html" class="text-white text-sm font-medium no-underline transition-colors">Blog</a>
+  </nav>
+
+  <!-- Right Side Actions -->
+  <div class="flex gap-3 items-center">
+    <a href="login.html" class="text-white text-sm font-medium no-underline border border-white/60 px-5 py-1.5 rounded transition-colors hover:bg-white/10">Login</a>
+    <a href="register.html" class="bg-[#821010] hover:bg-[#690d0d] text-white text-sm font-medium no-underline px-5 py-[7px] rounded transition-colors">Register</a>
+  </div>
+</header>
+
+<!-- Title Sub-Header Bar -->
+<div class="bg-[#a30000] px-[60px] py-4">
+  <h1 class="m-0 text-white text-lg font-semibold">Find Roommate</h1>
+</div>
+
+
+<!--find roommate form body -->
+<main class="bg- px-6 py-6 w-[822px] mb-[75px]">
+
+  <!-- Breadcrumb -->
+  <div class="text-sm text-gray-500 mb-4">
+    Find roommate <span class="mx-1">&gt;</span>
+    <span class="text-[#c41e1e] font-semibold">Request roommate</span>
+  </div>
+
+  <!-- Form Card -->
+  <div class="bg-white border border-gray-200">
+
+    <!-- Card Header -->
+    <div class="px-6 py-4 border-b border-gray-200 bg-[#f6f8fa]">
+      <h2 class="font-bold text-gray-900">Request roommate</h2>
+    </div>
+
+    <!-- Card Body -->
+    <div class="p-6">
+
+      <!-- Row 1 -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Home-owner</label>
+          <input type="text" placeholder="Yes" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Address of Home - owner</label>
+          <input type="text" placeholder="Dosunmo close Jabi" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Location</label>
+          <input type="text" placeholder="Abuja" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Property type</label>
+          <input type="text" placeholder="Self-contain" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Bedroom</label>
+          <input type="text" placeholder="Select no. of Bedroom" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Budget</label>
+          <input type="text" placeholder="₦" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="grid grid-cols-3 gap-6 mb-5">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Full Name</label>
+          <input type="text" placeholder="Ukwu Kamsy" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Phone Number</label>
+          <input type="text" placeholder="090XXXXXXXX" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Email address</label>
+          <input type="email" placeholder="ukwukamsy@gmail.com" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Row 4 -->
+      <div class="grid grid-cols-3 gap-6 mb-6">
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Gender</label>
+          <input type="text" placeholder="Male" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Account type</label>
+          <input type="text" placeholder="Individual" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-gray-800 mb-2">Profile Picture</label>
+          <input type="text" placeholder="Upload profile picture" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+        </div>
+      </div>
+
+      <!-- Tell us about yourself -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Tell us about yourself</label>
+        <textarea placeholder="Tell us about yourself  and we will find an appropriate match for you..." class="w-full h-[190px] border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e] resize-none"></textarea>
+      </div>
+
+      <!-- Special Need -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Special Need</label>
+        <textarea placeholder="Tell us about your special needs...." class="w-full h-[190px] border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e] resize-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+       <div class="flex justify-center">
+      <button type="submit" class=" bg-[#c41e1e] hover:bg-[#a21515] text-white text-sm font-bold px-8 py-3 rounded transition-colors">
+        Submit
+      </button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+
+
+<!-- footer -->
+<footer class="bg-[#34404c] text-white font-sans pt-[60px]">
+  <div class="max-w-[1200px] mx-auto px-5 flex justify-between items-start flex-wrap gap-10">
+    <!-- Brand Section -->
+    <div class="flex flex-col gap-6">
+      <div class="flex items-center gap-3">
+        <img src="./icons/co homes icon.png" alt="CoHomes Logo" class="h-10 w-auto">
+        <span class="text-[28px] font-bold tracking-wide">CoHomes</span>
+      </div>
+      <div class="flex items-center gap-2.5 text-slate-300 text-lg">
+        <img src="./icons/twitter.png" alt="Twitter" class="w-6 h-auto">
+        <span>@Thecohomes</span>
+      </div>
+    </div>
+
+    <!-- Links Columns -->
+    <div class="flex gap-[60px] flex-wrap">
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">FAQs</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">About Us</a></li>
+          <li><a href="properties.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Properties</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Privacy Policy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Home</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Buy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Sell</a></li>
+          <li><a href="findroomate.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Roommate</a></li>
+          <li><a href="blog.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Top Cities</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Abuja</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Lagos</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Enugu</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Contact Us</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li class="flex items-center gap-3">
+            <img src="./icons/email.png" alt="Email" class="w-[18px] h-auto opacity-90">
+            <a href="mailto:cohomes@gmail.com" class="text-slate-300 hover:text-white no-underline text-base transition-colors">cohomes@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/phone.png" alt="Phone" class="w-[18px] h-auto opacity-90">
+            <a href="tel:+2347056306413" class="text-slate-300 hover:text-white no-underline text-base transition-colors">+2347056306413</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/twitter.png" alt="Twitter" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">@Thecohomes</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/facebook.png" alt="Facebook" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Thecohomes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-[#222b34] mt-[60px] py-5">
+    <div class="max-w-[1200px] mx-auto px-5">
+      <p class="m-0 text-sm text-slate-400"><span class="text-[17px]">&copy;</span> 2020 CoHomes.com</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+

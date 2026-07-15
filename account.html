@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- First nav -->
+<header class="bg-[#D32323] px-[60px] py-3 flex justify-between items-center">
+  <!-- Logo Section -->
+  <a href="index.html" class="flex flex-col items-center gap-1 text-white no-underline">
+    <img src="./icons/co homes icon.png" alt="coHomes Logo" class="w-9 h-9 object-contain">
+    <span class="text-sm font-bold tracking-tight leading-none">coHomes</span>
+  </a>
+
+  <!-- Center Navigation Items -->
+  <nav class="flex gap-6">
+    <a href="index.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Home</a>
+    <a href="properties.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Properties</a>
+    <a href="findroomate.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Find Roommate</a>
+    <a href="emememme.html" class="text-white/90 hover:text-white text-sm font-medium no-underline transition-colors">Explore</a>
+    <a href="blog.html" class="text-white text-sm font-medium no-underline transition-colors">Blog</a>
+  </nav>
+
+  <!-- Right Side Actions -->
+  <div class="flex gap-3 items-center">
+    <a href="login.html" class="text-white text-sm font-medium no-underline border border-white/60 px-5 py-1.5 rounded transition-colors hover:bg-white/10">Login</a>
+    <a href="register.html" class="bg-[#821010] hover:bg-[#690d0d] text-white text-sm font-medium no-underline px-5 py-[7px] rounded transition-colors">Register</a>
+  </div>
+</header>
+
+
+<!-- Second Nav -->
+ <nav class="flex items-center gap-10 border border-gray-200 bg-white px-6 py-4">
+  <a href="account.html" class="text-[#c41e1e] font-semibold text-sm no-underline pb-1 border-b-2 border-[#c41e1e]">Account</a>
+  <a href="mylisting.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">My Listings</a>
+  <a href="savedproperty.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Saved Properties</a>
+  <a href="addproperty.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Add Property</a>
+  <a href="accountsettings.html" class="text-gray-600 font-semibold text-sm no-underline hover:text-gray-900">Account Settings</a>
+</nav>
+
+
+
+<!-- Page Content -->
+
+<main class="bg-gray-50 px-6 py-6 max-w-[1150px] mx-auto">
+
+  <!-- Form Card -->
+  <div class="bg-white border border-gray-200">
+
+    <!-- Card Header -->
+    <div class="px-6 py-4 border-b border-gray-200">
+      <h2 class="font-bold text-gray-900">Profile</h2>
+    </div>
+
+    <!-- Card Body -->
+    <div class="p-6">
+
+      <!-- Account type -->
+      <div class="mb-6 pb-6 border-b border-gray-200">
+        <label class="block text-sm font-semibold text-gray-800 mb-3">Account type</label>
+        <div class="flex items-center gap-8">
+          <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+            <input type="radio" name="account_type" checked class="w-4 h-4 accent-[#c41e1e]">
+            Individual
+          </label>
+          <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+            <input type="radio" name="account_type" class="w-4 h-4 accent-[#c41e1e]">
+            Property owner
+          </label>
+          <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+            <input type="radio" name="account_type" class="w-4 h-4 accent-[#c41e1e]">
+            Estate Agent
+          </label>
+        </div>
+      </div>
+
+      <!-- Photo + Fields -->
+      <div class="flex gap-8">
+
+        <!-- Profile Photo -->
+        <div class="flex-shrink-0">
+          <img src="images/ukwu 2.png" alt="Ukwu Kamsy" class="w-[135px] h-[135px] rounded-full object-cover">
+        </div>
+
+        <!-- Fields -->
+        <div class="flex-1">
+
+          <!-- Row 1 -->
+          <div class="grid grid-cols-2 gap-6 mb-5">
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">Full Name</label>
+              <input type="text" placeholder="Ukwu Kamsy" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">Company Name</label>
+              <input type="text" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="grid grid-cols-3 gap-6 mb-5">
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">E-mail  Address</label>
+              <input type="email" placeholder="Ukwukamsy@gmail.com" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">Mobile 1</label>
+              <input type="text" placeholder="090XXXXXXXX" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">Mobile 2</label>
+              <input type="text" placeholder="09067886414" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-3 gap-6 mb-5">
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">E-mail  Address 2</label>
+              <input type="email" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">City</label>
+              <input type="text" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-gray-800 mb-2">State</label>
+              <input type="text" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+            </div>
+          </div>
+
+          <!-- Street/Office Address -->
+          <div class="mb-2">
+            <label class="block text-sm font-semibold text-gray-800 mb-2">Street/Office Address</label>
+            <input type="text" placeholder="Joy Avenue Tpumpy estate ,Lugbe" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="mt-8 mb-6 pb-3 border-b border-gray-200">
+        <h3 class="text-sm font-semibold text-gray-800">Additional Information</h3>
+      </div>
+
+      <!-- Company website -->
+      <div class="mb-5">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Company website</label>
+        <input type="text" placeholder="e.g  http://comfortproperties.com" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+      </div>
+
+      <!-- About your company/Services -->
+      <div class="mb-6">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">About your company/Services</label>
+        <textarea class="w-full h-[210px] border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 outline-none focus:border-[#c41e1e] resize-none"></textarea>
+      </div>
+
+      <!-- Facebook Profile -->
+      <div class="mb-5">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Facebook Profile</label>
+        <input type="text" placeholder="e.g  http://facebook.com/UkwuKamsy" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+      </div>
+
+      <!-- Twitter Profile -->
+      <div class="mb-8">
+        <label class="block text-sm font-semibold text-gray-800 mb-2">Twitter Profile</label>
+        <input type="text" placeholder="e.g  http://twitter.com/UkwuKamsy" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 placeholder-gray-400 outline-none focus:border-[#c41e1e]">
+      </div>
+
+      <!-- Back Button -->
+      <div class="flex justify-center">
+        <button type="submit" class="bg-[#c41e1e] hover:bg-[#a21515] text-white text-sm font-bold px-10 py-3 rounded transition-colors">
+          Back
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+
+
+<!-- Footer  -->
+
+ <footer class="bg-[#34404c] text-white font-sans pt-[60px]">
+  <div class="max-w-[1200px] mx-auto px-5 flex justify-between items-start flex-wrap gap-10">
+    <!-- Brand Section -->
+    <div class="flex flex-col gap-6">
+      <div class="flex items-center gap-3">
+        <img src="./icons/co homes icon.png" alt="CoHomes Logo" class="h-10 w-auto">
+        <span class="text-[28px] font-bold tracking-wide">CoHomes</span>
+      </div>
+      <div class="flex items-center gap-2.5 text-slate-300 text-lg">
+        <img src="./icons/twitter.png" alt="Twitter" class="w-6 h-auto">
+        <span>@Thecohomes</span>
+      </div>
+    </div>
+
+    <!-- Links Columns -->
+    <div class="flex gap-[60px] flex-wrap">
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">FAQs</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">About Us</a></li>
+          <li><a href="properties.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Properties</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Privacy Policy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Home</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Buy</a></li>
+          <li><a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Sell</a></li>
+          <li><a href="findroomate.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Roommate</a></li>
+          <li><a href="blog.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Top Cities</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Abuja</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Lagos</a></li>
+          <li><a href="#" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Enugu</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold mt-0 mb-5 text-white">Contact Us</h3>
+        <ul class="list-none p-0 m-0 flex flex-col gap-4">
+          <li class="flex items-center gap-3">
+            <img src="./icons/email.png" alt="Email" class="w-[18px] h-auto opacity-90">
+            <a href="mailto:cohomes@gmail.com" class="text-slate-300 hover:text-white no-underline text-base transition-colors">cohomes@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/phone.png" alt="Phone" class="w-[18px] h-auto opacity-90">
+            <a href="tel:+2347056306413" class="text-slate-300 hover:text-white no-underline text-base transition-colors">+2347056306413</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/twitter.png" alt="Twitter" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">@Thecohomes</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="./icons/facebook.png" alt="Facebook" class="w-[18px] h-auto opacity-90">
+            <a href="index.html" class="text-slate-300 hover:text-white no-underline text-base transition-colors">Thecohomes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bg-[#222b34] mt-[60px] py-5">
+    <div class="max-w-[1200px] mx-auto px-5">
+      <p class="m-0 text-sm text-slate-400"><span class="text-[17px]">&copy;</span> 2020 CoHomes.com</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+

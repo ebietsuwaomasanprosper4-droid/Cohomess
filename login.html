@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+     <!-- Login page start -->
+    
+<div class="form-wrapper">
+  <form class="login-card" onsubmit="event.preventDefault();">
+    <!-- Email Row -->
+    <div class="input-row">
+      <input type="email" placeholder="Email address" class="input-field">
+    </div>
+    
+    <!-- Password Row -->
+    <div class="input-row">
+      <input type="password" placeholder="Password" class="input-field">
+    </div>
+    
+    <!-- Remember Me & Forgot Password -->
+    <div class="options-group">
+      <label class="checkbox-label">
+        <input type="checkbox"> Remember me
+      </label>
+      <a href="#" class="red-link">Forgot Password?</a>
+    </div>
+    
+    <!-- Action Row -->
+    <div class="action-row">
+      <span class="text-muted">New here? <a href="register.html" class="red-link">Create account</a></span>
+      <button type="submit" class="sign-in-btn">Sign In</button>
+    </div>
+    
+    <!-- Footer Row -->
+    <div class="footer-row">
+      <span class="text-muted">Need help? <a href="#" class="red-link">Contact Support</a></span>
+      <a href="#" class="terms-link">Privacy and Terms</a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+

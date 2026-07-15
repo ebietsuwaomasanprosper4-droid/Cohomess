@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    
+<div class="form-wrapper">
+  <form class="register-card" onsubmit="event.preventDefault();">
+    <!-- Name Row -->
+    <div class="input-row">
+      <input type="text" placeholder="First Name" class="input-field half-width">
+      <input type="text" placeholder="Last Name" class="input-field half-width">
+    </div>
+    
+    <!-- Phone Row -->
+    <div class="input-row">
+      <input type="tel" placeholder="Phone Number" class="input-field">
+    </div>
+    
+    <!-- Email Row -->
+    <div class="input-row">
+      <input type="email" placeholder="Email address" class="input-field">
+    </div>
+    
+    <!-- Password Row -->
+    <div class="input-row">
+      <input type="password" placeholder="Password" class="input-field">
+    </div>
+    
+    <!-- Account Type Checkboxes -->
+    <div class="checkbox-group">
+      <label class="checkbox-label">
+        <input type="checkbox"> Individual
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox"> Agent
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox"> Property owner
+      </label>
+    </div>
+    
+    <!-- Action Row -->
+    <div class="action-row">
+      <span class="text-muted">Have an account? <a href="login.html" class="red-link">Sign in</a></span>
+      <button type="submit" class="register-btn">Register</button>
+    </div>
+    
+    <!-- Footer Row -->
+    <div class="footer-row">
+      <span class="text-muted">Need help? <a href="#" class="red-link">Contact Support</a></span>
+      <a href="#" class="terms-link">Privacy and Terms</a>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+

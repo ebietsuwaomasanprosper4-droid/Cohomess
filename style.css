@@ -183,7 +183,11 @@ a{
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
-    justify-content: center;
+    
+}
+
+.img_container_2 {
+    margin-top: 50px
 }
 
 .selfcon{
@@ -1616,7 +1620,7 @@ a{
         font-size: 11px;
     }
 }
-}
+
 
 @media (max-width: 768px) {
     .hero h1{ font-size: 26px; }
